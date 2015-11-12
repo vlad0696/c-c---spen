@@ -1,0 +1,60 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 421
+  ClientWidth = 955
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object all_text_memo: TMemo
+    Left = 8
+    Top = 72
+    Width = 577
+    Height = 341
+    Lines.Strings = (
+      'all_text_memo')
+    TabOrder = 0
+  end
+  object result_table: TStringGrid
+    Left = 616
+    Top = 72
+    Width = 331
+    Height = 341
+    ColCount = 2
+    FixedCols = 0
+    RowCount = 15
+    ScrollBars = ssVertical
+    TabOrder = 1
+    ColWidths = (
+      242
+      69)
+  end
+  object Open_button: TButton
+    Left = 208
+    Top = 33
+    Width = 129
+    Height = 33
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083
+    TabOrder = 2
+    OnClick = Open_buttonClick
+  end
+  object Result_button: TButton
+    Left = 704
+    Top = 20
+    Width = 129
+    Height = 33
+    Caption = #1055#1086#1076#1089#1095#1080#1090#1072#1090#1100' '#1089#1087#1077#1085
+    TabOrder = 3
+    OnClick = Result_buttonClick
+  end
+  object OpenDialog1: TOpenDialog
+  end
+end
